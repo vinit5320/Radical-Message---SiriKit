@@ -14,6 +14,14 @@
 		1582C5DA1D95DD2D0047CE46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1582C5D81D95DD2D0047CE46 /* LaunchScreen.storyboard */; };
 		1582C5E51D95DD2D0047CE46 /* RadicalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1582C5E41D95DD2D0047CE46 /* RadicalTests.swift */; };
 		1582C5F01D95DD2D0047CE46 /* RadicalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1582C5EF1D95DD2D0047CE46 /* RadicalUITests.swift */; };
+		1582C6041D95DEC80047CE46 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1582C6031D95DEC80047CE46 /* IntentHandler.swift */; };
+		1582C60D1D95DEC90047CE46 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1582C60C1D95DEC90047CE46 /* IntentsUI.framework */; };
+		1582C6101D95DEC90047CE46 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1582C60F1D95DEC90047CE46 /* IntentViewController.swift */; };
+		1582C6131D95DEC90047CE46 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1582C6111D95DEC90047CE46 /* MainInterface.storyboard */; };
+		1582C6171D95DEC90047CE46 /* RadicalExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1582C60A1D95DEC90047CE46 /* RadicalExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1582C61A1D95DEC90047CE46 /* RadicalExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1582C6011D95DEC80047CE46 /* RadicalExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1582C6281D95F2970047CE46 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 1582C6261D95F2970047CE46 /* bubble.png */; };
+		1582C6291D95F2970047CE46 /* pikaFace.png in Resources */ = {isa = PBXBuildFile; fileRef = 1582C6271D95F2970047CE46 /* pikaFace.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +39,36 @@
 			remoteGlobalIDString = 1582C5CB1D95DD2D0047CE46;
 			remoteInfo = Radical;
 		};
+		1582C6151D95DEC90047CE46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1582C5C41D95DD2D0047CE46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1582C6091D95DEC90047CE46;
+			remoteInfo = RadicalExtensionUI;
+		};
+		1582C6181D95DEC90047CE46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1582C5C41D95DD2D0047CE46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1582C6001D95DEC80047CE46;
+			remoteInfo = RadicalExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1582C6211D95DEC90047CE46 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1582C6171D95DEC90047CE46 /* RadicalExtensionUI.appex in Embed App Extensions */,
+				1582C61A1D95DEC90047CE46 /* RadicalExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1582C5CC1D95DD2D0047CE46 /* Radical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radical.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +84,17 @@
 		1582C5EB1D95DD2D0047CE46 /* RadicalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadicalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1582C5EF1D95DD2D0047CE46 /* RadicalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadicalUITests.swift; sourceTree = "<group>"; };
 		1582C5F11D95DD2D0047CE46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1582C6011D95DEC80047CE46 /* RadicalExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RadicalExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1582C6031D95DEC80047CE46 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		1582C6051D95DEC80047CE46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1582C60A1D95DEC90047CE46 /* RadicalExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RadicalExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1582C60C1D95DEC90047CE46 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		1582C60F1D95DEC90047CE46 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		1582C6121D95DEC90047CE46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1582C6141D95DEC90047CE46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1582C6251D95EF210047CE46 /* Radical.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Radical.entitlements; sourceTree = "<group>"; };
+		1582C6261D95F2970047CE46 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
+		1582C6271D95F2970047CE46 /* pikaFace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pikaFace.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +119,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1582C5FE1D95DEC80047CE46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1582C6071D95DEC90047CE46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1582C60D1D95DEC90047CE46 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +143,9 @@
 				1582C5CE1D95DD2D0047CE46 /* Radical */,
 				1582C5E31D95DD2D0047CE46 /* RadicalTests */,
 				1582C5EE1D95DD2D0047CE46 /* RadicalUITests */,
+				1582C6021D95DEC80047CE46 /* RadicalExtension */,
+				1582C60E1D95DEC90047CE46 /* RadicalExtensionUI */,
+				1582C60B1D95DEC90047CE46 /* Frameworks */,
 				1582C5CD1D95DD2D0047CE46 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +156,8 @@
 				1582C5CC1D95DD2D0047CE46 /* Radical.app */,
 				1582C5E01D95DD2D0047CE46 /* RadicalTests.xctest */,
 				1582C5EB1D95DD2D0047CE46 /* RadicalUITests.xctest */,
+				1582C6011D95DEC80047CE46 /* RadicalExtension.appex */,
+				1582C60A1D95DEC90047CE46 /* RadicalExtensionUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +165,7 @@
 		1582C5CE1D95DD2D0047CE46 /* Radical */ = {
 			isa = PBXGroup;
 			children = (
+				1582C6251D95EF210047CE46 /* Radical.entitlements */,
 				1582C5CF1D95DD2D0047CE46 /* AppDelegate.swift */,
 				1582C5D11D95DD2D0047CE46 /* ViewController.swift */,
 				1582C5D31D95DD2D0047CE46 /* Main.storyboard */,
@@ -125,6 +194,35 @@
 			path = RadicalUITests;
 			sourceTree = "<group>";
 		};
+		1582C6021D95DEC80047CE46 /* RadicalExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1582C6031D95DEC80047CE46 /* IntentHandler.swift */,
+				1582C6051D95DEC80047CE46 /* Info.plist */,
+			);
+			path = RadicalExtension;
+			sourceTree = "<group>";
+		};
+		1582C60B1D95DEC90047CE46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1582C60C1D95DEC90047CE46 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1582C60E1D95DEC90047CE46 /* RadicalExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				1582C6261D95F2970047CE46 /* bubble.png */,
+				1582C6271D95F2970047CE46 /* pikaFace.png */,
+				1582C60F1D95DEC90047CE46 /* IntentViewController.swift */,
+				1582C6111D95DEC90047CE46 /* MainInterface.storyboard */,
+				1582C6141D95DEC90047CE46 /* Info.plist */,
+			);
+			path = RadicalExtensionUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +233,13 @@
 				1582C5C81D95DD2D0047CE46 /* Sources */,
 				1582C5C91D95DD2D0047CE46 /* Frameworks */,
 				1582C5CA1D95DD2D0047CE46 /* Resources */,
+				1582C6211D95DEC90047CE46 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1582C6161D95DEC90047CE46 /* PBXTargetDependency */,
+				1582C6191D95DEC90047CE46 /* PBXTargetDependency */,
 			);
 			name = Radical;
 			productName = Radical;
@@ -181,6 +282,40 @@
 			productReference = 1582C5EB1D95DD2D0047CE46 /* RadicalUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1582C6001D95DEC80047CE46 /* RadicalExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1582C61E1D95DEC90047CE46 /* Build configuration list for PBXNativeTarget "RadicalExtension" */;
+			buildPhases = (
+				1582C5FD1D95DEC80047CE46 /* Sources */,
+				1582C5FE1D95DEC80047CE46 /* Frameworks */,
+				1582C5FF1D95DEC80047CE46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadicalExtension;
+			productName = RadicalExtension;
+			productReference = 1582C6011D95DEC80047CE46 /* RadicalExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1582C6091D95DEC90047CE46 /* RadicalExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1582C61B1D95DEC90047CE46 /* Build configuration list for PBXNativeTarget "RadicalExtensionUI" */;
+			buildPhases = (
+				1582C6061D95DEC90047CE46 /* Sources */,
+				1582C6071D95DEC90047CE46 /* Frameworks */,
+				1582C6081D95DEC90047CE46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadicalExtensionUI;
+			productName = RadicalExtensionUI;
+			productReference = 1582C60A1D95DEC90047CE46 /* RadicalExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,17 +328,35 @@
 				TargetAttributes = {
 					1582C5CB1D95DD2D0047CE46 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V3EA789QEM;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 0;
+							};
+						};
 					};
 					1582C5DF1D95DD2D0047CE46 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V3EA789QEM;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1582C5CB1D95DD2D0047CE46;
 					};
 					1582C5EA1D95DD2D0047CE46 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V3EA789QEM;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1582C5CB1D95DD2D0047CE46;
+					};
+					1582C6001D95DEC80047CE46 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V3EA789QEM;
+						ProvisioningStyle = Automatic;
+					};
+					1582C6091D95DEC90047CE46 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V3EA789QEM;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -223,6 +376,8 @@
 				1582C5CB1D95DD2D0047CE46 /* Radical */,
 				1582C5DF1D95DD2D0047CE46 /* RadicalTests */,
 				1582C5EA1D95DD2D0047CE46 /* RadicalUITests */,
+				1582C6001D95DEC80047CE46 /* RadicalExtension */,
+				1582C6091D95DEC90047CE46 /* RadicalExtensionUI */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +404,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1582C5FF1D95DEC80047CE46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1582C6081D95DEC90047CE46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1582C6131D95DEC90047CE46 /* MainInterface.storyboard in Resources */,
+				1582C6291D95F2970047CE46 /* pikaFace.png in Resources */,
+				1582C6281D95F2970047CE46 /* bubble.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +452,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1582C5FD1D95DEC80047CE46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1582C6041D95DEC80047CE46 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1582C6061D95DEC90047CE46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1582C6101D95DEC90047CE46 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +480,16 @@
 			isa = PBXTargetDependency;
 			target = 1582C5CB1D95DD2D0047CE46 /* Radical */;
 			targetProxy = 1582C5EC1D95DD2D0047CE46 /* PBXContainerItemProxy */;
+		};
+		1582C6161D95DEC90047CE46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1582C6091D95DEC90047CE46 /* RadicalExtensionUI */;
+			targetProxy = 1582C6151D95DEC90047CE46 /* PBXContainerItemProxy */;
+		};
+		1582C6191D95DEC90047CE46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1582C6001D95DEC80047CE46 /* RadicalExtension */;
+			targetProxy = 1582C6181D95DEC90047CE46 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -310,6 +508,14 @@
 				1582C5D91D95DD2D0047CE46 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1582C6111D95DEC90047CE46 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1582C6121D95DEC90047CE46 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -411,7 +617,9 @@
 		1582C5F51D95DD2D0047CE46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V3EA789QEM;
 				INFOPLIST_FILE = Radical/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinit.Radical;
@@ -423,7 +631,9 @@
 		1582C5F61D95DD2D0047CE46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V3EA789QEM;
 				INFOPLIST_FILE = Radical/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinit.Radical;
@@ -437,6 +647,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V3EA789QEM;
 				INFOPLIST_FILE = RadicalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinit.RadicalTests;
@@ -451,6 +662,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V3EA789QEM;
 				INFOPLIST_FILE = RadicalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinit.RadicalTests;
@@ -464,6 +676,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V3EA789QEM;
 				INFOPLIST_FILE = RadicalUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinit.RadicalUITests;
@@ -477,12 +690,65 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V3EA789QEM;
 				INFOPLIST_FILE = RadicalUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinit.RadicalUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Radical;
+			};
+			name = Release;
+		};
+		1582C61C1D95DEC90047CE46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = V3EA789QEM;
+				INFOPLIST_FILE = RadicalExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinit.Radical.RadicalExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1582C61D1D95DEC90047CE46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = V3EA789QEM;
+				INFOPLIST_FILE = RadicalExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinit.Radical.RadicalExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1582C61F1D95DEC90047CE46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = V3EA789QEM;
+				INFOPLIST_FILE = RadicalExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinit.Radical.RadicalExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1582C6201D95DEC90047CE46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = V3EA789QEM;
+				INFOPLIST_FILE = RadicalExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinit.Radical.RadicalExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -519,6 +785,22 @@
 			buildConfigurations = (
 				1582C5FB1D95DD2D0047CE46 /* Debug */,
 				1582C5FC1D95DD2D0047CE46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1582C61B1D95DEC90047CE46 /* Build configuration list for PBXNativeTarget "RadicalExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1582C61C1D95DEC90047CE46 /* Debug */,
+				1582C61D1D95DEC90047CE46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1582C61E1D95DEC90047CE46 /* Build configuration list for PBXNativeTarget "RadicalExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1582C61F1D95DEC90047CE46 /* Debug */,
+				1582C6201D95DEC90047CE46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
